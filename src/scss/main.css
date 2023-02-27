@@ -1,0 +1,218 @@
+.container {
+  margin-bottom: 4rem;
+  background-color: #FDFEFF;
+}
+.container .header_content {
+  display: flex;
+  padding: 1rem 0;
+  align-items: center;
+  justify-content: space-around;
+}
+.container .header_content .navbar .list_a {
+  font-size: 0.9rem;
+  display: flex;
+  gap: 1.5rem;
+}
+.container .header_content .navbar .list_a a {
+  color: #4B4B4B;
+}
+
+#main_hero {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  height: 518px;
+}
+#main_hero .content_imageLeft {
+  position: relative;
+  background: linear-gradient(195.22deg, rgba(20, 20, 20, 0) 20.46%, #141414 80%), url(/src/img/wallpaper.svg);
+  background-size: cover;
+  opacity: 0.9;
+  background-position: center;
+  width: 710px;
+  height: 518px;
+  border-radius: 1rem;
+}
+#main_hero .content_imageLeft .img_wallpaper img {
+  max-width: 100%;
+}
+#main_hero .content_imageLeft .text_wallpaper {
+  padding: 1rem;
+  bottom: 0;
+  position: absolute;
+}
+#main_hero .content_imageLeft .text_wallpaper h3 {
+  color: white;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+}
+#main_hero .form_login {
+  border-radius: 1rem;
+  width: 348px;
+  height: 520px;
+  background-color: #FDFEFF;
+}
+#main_hero .form_login .content_formLogin .top_login {
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#main_hero .form_login .content_formLogin .cbx {
+  position: relative;
+  top: 1px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #B4AEAE;
+  border-radius: 6px;
+  transition: background 0.1s ease;
+  cursor: pointer;
+  display: block;
+}
+#main_hero .form_login .content_formLogin .cbx:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 6px;
+  width: 5px;
+  height: 8px;
+  opacity: 0;
+  transform: rotate(45deg) scale(0);
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transition: all 0.3s ease;
+  transition-delay: 0.15s;
+}
+#main_hero .form_login .content_formLogin .lbl {
+  margin-left: 5px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+#main_hero .form_login .content_formLogin #cbx:checked ~ .cbx {
+  border-color: transparent;
+  background: #ED2590;
+  animation: jelly 0.5s ease;
+}
+#main_hero .form_login .content_formLogin #cbx:checked ~ .cbx:after {
+  opacity: 1;
+  transform: rotate(45deg) scale(1);
+}
+#main_hero .form_login .content_formLogin .cntr {
+  display: flex;
+  position: relative;
+  align-items: center;
+  gap: 0.5rem;
+}
+#main_hero .form_login .content_formLogin .cntr span {
+  font-size: 0.9rem;
+  color: #868686;
+}
+@keyframes jelly {
+  from {
+    transform: scale(1, 1);
+  }
+  30% {
+    transform: scale(1.25, 0.75);
+  }
+  40% {
+    transform: scale(0.75, 1.25);
+  }
+  50% {
+    transform: scale(1.15, 0.85);
+  }
+  65% {
+    transform: scale(0.95, 1.05);
+  }
+  75% {
+    transform: scale(1.05, 0.95);
+  }
+  to {
+    transform: scale(1, 1);
+  }
+}
+#main_hero .form_login .content_formLogin .hidden-xs-up {
+  display: none !important;
+}
+#main_hero .form_login .content_formLogin .input_form {
+  margin: 1rem;
+}
+#main_hero .form_login .content_formLogin .input_form .input_field {
+  position: relative;
+  margin-bottom: 1rem;
+}
+#main_hero .form_login .content_formLogin .input_form .input_field input {
+  width: 100%;
+  padding: 0 0.6rem;
+  height: 51px;
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #EFF3F8;
+}
+#main_hero .form_login .content_formLogin .input_form .input_field .fa-eye-slash {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+#main_hero .form_login .content_formLogin .input_form .input_field .fa-regular {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+#main_hero .form_login .content_formLogin .input_form .btn_login {
+  justify-content: center;
+  display: flex;
+  margin-top: 1.5rem;
+}
+#main_hero .form_login .content_formLogin .input_form .btn_login .btn {
+  background-color: #ED2590;
+  border: none;
+  width: 100%;
+  height: 50px;
+  border-radius: 0.5rem;
+  color: white;
+  cursor: pointer;
+  font-size: 17px;
+}
+#main_hero .form_login .content_formLogin .input_form .btn_CreateAcount .btn {
+  margin: 1rem 0;
+  background-color: #EFF3F8;
+  border: none;
+  width: 100%;
+  height: 50px;
+  border-radius: 0.5rem;
+  color: #ED2590;
+  cursor: pointer;
+  font-size: 17px;
+}
+#main_hero .form_login .content_formLogin .input_form .forgot_pass a {
+  display: flex;
+  justify-content: center;
+  color: #ED2590;
+  text-decoration: underline;
+}
+
+#spanEmail, #spanPassword {
+  padding-left: 10px;
+  color: rgb(209, 78, 78);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Epilogue", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: #D9E6F7;
+}
+
+#hidePassword {
+  display: none;
+}/*# sourceMappingURL=main.css.map */

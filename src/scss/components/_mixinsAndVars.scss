@@ -1,0 +1,45 @@
+//Mixins
+
+@mixin btnLoginStyled(){
+    background-color: $colorPink;
+    border: none;
+    width: 100%;
+    height: 50px;
+    border-radius: .5rem;
+    color: #ffff;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+
+@mixin btnCreateAcountStyled(){
+    background-color: $white2;
+    border: none;
+    width: 100%;
+    height: 50px;
+    border-radius: .5rem;
+    color: $colorPink;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+@mixin inputStyled{
+    width: 100%;
+    padding: 0 .6rem;
+    height: 51px;
+    outline: none;
+    border: none;
+    border-radius: .5rem;
+    background-color: $white2;
+}
+
+
+//Vars
+
+$colorPink: #ED2590;
+$gray: #B4AEAE;
+$white: #B4AEAE;
+$blueLight:#D9E6F7;
+$darkLight: #4B4B4B;
+$white2: #EFF3F8;
+
